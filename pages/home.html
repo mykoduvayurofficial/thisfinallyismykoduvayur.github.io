@@ -1,0 +1,141 @@
+<script type="text/javascript"src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjyFs7nzkwdQ9YhT1AeALSYEeGEBbFpuQ&callback=initMap"></script>
+
+<div class="col-md-12" id="mypage">
+
+    <nav id="mykdr_nav" ng-controller="mainController">
+
+        <div class="col-md-12">
+
+            <div id="mykdr_logo">
+                <img class="mylogo" src="images/mykdrpng.png" href="#" alt="www.mykoduvayur.in" />
+
+                <a class="mylogocap" href="#">MYKODUVAYUR</a>
+                <label ng-click="opened()" id="mymenuglyph"><i class="fa fa-bars"></i></label>
+                <label ng-click="closed()" id="closenav"><i class="glyphicon glyphicon-remove"></i></label>
+            </div>
+
+            <ul id="mykdr_menu">
+                <li id="language">
+                    <a ng-click="langselect()" id="langmenu">&nbsp;<i class="fa fa-language"></i> LANGUAGE &nbsp; </a>
+                    <a ng-click="eng()" id="english">&nbsp;<i class="fa fa-buysellads"></i> ENGLISH&nbsp;</a>
+                    <a ng-click="mal()" id="malayalam">&nbsp;<label>മ</label> മലയാളം&nbsp;</a>
+                </li>
+                <li ng-click="menuload()" id="home"><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
+                <li ng-click="menuload()" id="locality"><a href="#locality"><i class="fa fa-map"></i> LOCALITY</a></li>
+                <li ng-click="menuload()" id="culture"><a href="#culture"><i class="fa fa-bell"></i> CULTURE</a></li>
+                <li ng-click="menuload()" id="services"><a href="#services"><i class="fa fa-rupee"></i> SERVICES</a></li>
+                <li ng-click="menuload()" id="trending"><a href="#trending"><i class="fa fa-hashtag"></i> TRENDING</a></li>
+                <li ng-click="menuload()" id="events"><a href="#events"><i class="fa fa-calendar"></i> EVENTS</a></li>
+                <li ng-click="menuload()" id="feedback"><a href="#feedback"><i class="fa fa-comments"></i> FEEDBACK</a></li>
+                <li ng-click="menuload()" id="about"><a href="#about"><i class="fa fa-universal-access"></i> ABOUT US</a></li>
+                <li id="mobshare">
+                    <a id="mobfbshare" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.mykoduvayur.in%2F&amp;src=sdkpreparse"><i class="fa fa-facebook-official"></i></a>
+                    <a id="mobplusone" href="https://plus.google.com/share?url=http://www.mykoduvayur.in"><i class="fa fa-google-plus-official"></i></a>
+                    <a id="mobtweet" href="https://twitter.com/share?url=http://www.mykoduvayur.in"><i  class="fa fa-twitter"></i></a>
+                    <a id="mobwhatsapp" href="whatsapp://send?text=http://www.mykoduvayur.in"><i class="fa fa-whatsapp"></i></a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="alertlang" class="alert alert-success" role="alert">
+            <a href="" class="close" aria-label="close" ng-click="alertClose()">×</a>
+            Selected Language: <strong>{{myLang}}</strong>
+        </div>
+
+    </nav>
+
+    <div class="col-md-12" id="non-nav" ng-controller="homeController">
+
+        <img class="pagebanner" src="./images/covers/home.jpg" />
+
+        <div class="col-md-12" id="content">
+
+            <div class="col-md-2" id="adslot1_pc">
+                <div></div>
+            </div>
+
+            <div class="col-md-8" id="maincontent">
+
+                <!--<p><br /></p>-->
+
+                <div class="col-md-12" id="adslot1_mob">
+                    <div></div>
+                </div>
+
+
+                <div class="col-md-12" id="intro">
+
+                    <h1>INTRODUCTION<i class="fa fa-pencil-square-o"></i></h1>
+                    <!--<p><br /></p>-->
+                    <p>Koduvayur is a town located in the Southern part of Palakkad district in Kerala. It’s a Village Panchayat that comes under the Chittur Taluk. It is a place known for its Diversity. Be it the population, slang, festivals, business, culture or the livelihood, there are various kinds of it all in this place.</p>
+                    <p><b>MyKoduvayur</b> is a Web Project initiated by <a href="#about"><b>Team BehindBrains</b></a> based on Koduvayur. This is an Information Website which primarily focuses on :</p>
+                    <li>Delivering any and every kind of regularly updated Information related to Koduvayur.</li>
+                    <li>Providing Technical Assistance and Promotion to institutions, events and schemes for Public Welfare, happening in and around Koduvayur.</li>
+                    <p></p>
+                    <p>This website intends to be a Library about Koduvayur for people from outside, a trustable and informative friend for those who live here, and an everlasting book of memories for those who miss this place.</p>
+                    <p>Read on to find out more…</p>
+
+                </div>
+
+                <div class="col-md-12" id="koduvayur">
+                    <h1>KODUVAYUR<i class="fa fa-map-marker"></i></h1>
+                    <!--<p><br /></p>-->
+                    <div id="kdrmap"></div>
+                    <!--<p><br /></p>-->
+                    <p>The domain of Koduvayur stretches to Mannathukavu in the North-West, Nochur in the North-East, Ethanur in the West, Karippode in the East, Kakkayur in the South-West and Annakode in the South.</p>
+                    <p>Koduvayur is the Geographical Intersection between a number of places like Palakkad, Nemmara, Alathur, Chittur, Pollachi, Kollengode etc. The Vehicle Traffic that frequently occurs here is a stand out feature. The road is busy 24/7 as it connects a number of places. KSRTC operates long route buses to Thrissur, Trivandrum, Kochi and Coimbatore through here.</p>
+                    <p>Being the prime Business Center for the south-west region of Palakkad district, most of the population depends upon Koduvayur for their day-to-day needs like vegetables & other groceries, cloth and meat products. This place acts as a hub for merchandise coming from Coimbatore and Pollachi in Tamil Nadu. Koduvayur Market is one of the prominent places and business range from small scale shops to wholesale godowns, active 24/7.</p>
+                    <p>The speaking tongues are mainly Malayalam and Tamil, although the slang varies for each locality and community of people. Population has a majority of Hindus belonging to a number of sub-castes. Muslim community is concentrated on some parts of Koduvayur and there are a number of Christian families spread around even though it is a minority here.  Koduvayur is known for its cultural diversity. From Eid, Easter and Onam to a number of Regional Festivals spread around, there is something to celebrate each time of the year.</p>
+                </div>
+
+                <div class="col-md-12" id="adslot2_mob">
+                    <div></div>
+                </div>
+
+                <div class="col-md-12" id="behindlogo">
+                    <h1>BEHIND THE LOGO<img src="./images/mykdrpng.png"></h1>
+                    <!--<p><br /></p>-->
+                    <p>The logo of <b>MyKoduvayur</b> is a <b>Banyan tree</b>. Its the National Tree of India. Its from the Moraceae family and its Scientific name is Ficus Benghalensis. Its considered as a Sacred tree all over India and it also has several medicinal properties.</p>
+                    <p>But that’s not why we kept it as Our Logo. In the culturally, geographically and ethnically diverse place of Koduvayur, it is the one thing in common that unites everyone in Koduvayur irrespective of age, gender, religion, caste, location and economic or social status.</p>
+                    <p>‘<b>Althara</b>’, as we call it, is present in every prime location of the village, and it serves as the main host for almost every event that takes place in here. From small gatherings, to public meetings, business, processions, promotions, games, perfomance and festivals… these ‘Altharas’ have seen them all, from time to time. The term is a part and parcel of everyone in and around this place on their daily conversations. Koduvayur is decorated with numerous banyan trees in general. But it’s the old ones at the prime spots that are considered of great significance.</p>
+                    <p>Be it Angadi Althara, the Capital Centre of Koduvayur, which is the Gateway to the Koduvayur Market, or the Gramapeedika/ High School Athara, which is at the Junction entrance to the Keralapuram Agraharam, or the Sivan Kovil Althara which is at the Heart of the village and the centre spot of Koduvayur Radholsavam, or be it Ethanur, Kakkayur or other locations, ‘Althara’ is the one term that unites the whole of Koduvayur and that’s why we chose an Althara to represent MyKoduvayur.</p>
+                </div>
+
+                <div class="col-md-12" id="guide">
+                    <h1>WEBSITE GUIDE <i class="fa fa-sitemap"></i></h1>
+                    <!--<p><br /></p>-->
+                    <img src="./images/kdrguide.jpg"></img>
+                </div>
+
+            </div>
+
+            <div class="col-md-2" id="adslot2_pc">
+                <div></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-12" id="footer" ng-controller="mainController">
+
+        <p id="copyright">Team BehindBrains © 2017 Project MyKoduvayur.</p>
+
+        <p id="follow">Follow Us On: &nbsp;&nbsp;
+            <a href="https://www.facebook.com/MyKoduvayur-675861215918423/" ><i class="fa fa-facebook-official"></i></a>
+        </p>
+
+        <p id="pcshare">Share:
+            <a id="pcfbshare" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.mykoduvayur.in%2F&amp;src=sdkpreparse"><i class="fa fa-facebook-official"></i></a>
+            <a id="pcplusone" href="https://plus.google.com/share?url=http://www.mykoduvayur.in"><i class="fa fa-google-plus-official"></i></a>
+            <a id="pctweet" href="https://twitter.com/share?url=http://www.mykoduvayur.in"><i  class="fa fa-twitter"></i></a>
+            <a id="pcwhatsapp" href="whatsapp://send?text=http://www.mykoduvayur.in"><i class="fa fa-whatsapp"></i></a>
+        </p>
+
+    </div>
+
+
+</div>
+
+

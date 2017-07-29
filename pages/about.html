@@ -1,0 +1,164 @@
+
+<div class="col-md-12" id="mypage">
+
+    <nav id="mykdr_nav" ng-controller="mainController">
+
+        <div class="col-md-12">
+
+            <div id="mykdr_logo">
+                <img class="mylogo" src="images/mykdrpng.png" href="#" alt="www.mykoduvayur.in" />
+
+                <a class="mylogocap" href="#">MYKODUVAYUR</a>
+                <label ng-click="opened()" id="mymenuglyph"><i class="fa fa-bars"></i></label>
+                <label ng-click="closed()" id="closenav"><i class="glyphicon glyphicon-remove"></i></label>
+            </div>
+
+            <ul id="mykdr_menu">
+                <li id="language">
+                    <a ng-click="langselect()" id="langmenu">&nbsp;<i class="fa fa-language"></i> LANGUAGE &nbsp; </a>
+                    <a ng-click="eng()" id="english">&nbsp;<i class="fa fa-buysellads"></i> ENGLISH&nbsp;</a>
+                    <a ng-click="mal()" id="malayalam">&nbsp;<label>മ</label> മലയാളം&nbsp;</a>
+                </li>
+                <li ng-click="menuload()" id="home"><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
+                <li ng-click="menuload()" id="locality"><a href="#locality"><i class="fa fa-map"></i> LOCALITY</a></li>
+                <li ng-click="menuload()" id="culture"><a href="#culture"><i class="fa fa-bell"></i> CULTURE</a></li>
+                <li ng-click="menuload()" id="services"><a href="#services"><i class="fa fa-rupee"></i> SERVICES</a></li>
+                <li ng-click="menuload()" id="trending"><a href="#trending"><i class="fa fa-hashtag"></i> TRENDING</a></li>
+                <li ng-click="menuload()" id="events"><a href="#events"><i class="fa fa-calendar"></i> EVENTS</a></li>
+                <li ng-click="menuload()" id="feedback"><a href="#feedback"><i class="fa fa-comments"></i> FEEDBACK</a></li>
+                <li ng-click="menuload()" id="about"><a href="#about"><i class="fa fa-universal-access"></i> ABOUT US</a></li>
+                <li id="mobshare">
+                    <a id="mobfbshare" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.mykoduvayur.in%2F&amp;src=sdkpreparse"><i class="fa fa-facebook-official"></i></a>
+                    <a id="mobplusone" href="https://plus.google.com/share?url=http://www.mykoduvayur.in"><i class="fa fa-google-plus-official"></i></a>
+                    <a id="mobtweet" href="https://twitter.com/share?url=http://www.mykoduvayur.in"><i  class="fa fa-twitter"></i></a>
+                    <a id="mobwhatsapp" href="whatsapp://send?text=http://www.mykoduvayur.in"><i class="fa fa-whatsapp"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="alertlang" class="alert alert-success" role="alert">
+            <a href="" class="close" aria-label="close" ng-click="alertClose()">×</a>
+            Selected Language: <strong>{{myLang}}</strong>
+        </div>
+
+    </nav>
+
+    <div class="col-md-12" id="non-nav">
+
+        <img class="pagebanner" src="./images/covers/team.jpg" />
+
+        <div class="col-md-12" id="content">
+
+            <div class="col-md-2" id="adslot1_pc">
+                <div></div>
+            </div>
+
+            <div class="col-md-8" id="maincontent">
+
+                <div class="col-md-12" id="adslot1_mob">
+                    <div></div>
+                </div>
+
+                <div class="col-md-12" id="intro">
+                    <h1>HELLO WORLD !<i class="fa fa-terminal"></i></h1>
+                    <p>We are a gathering of passionate individuals ready to conjure things creatively and sweat it out to make them happen. We focus upon the contemporary technologies and provide state of the art <b>Web Solutions</b> for the needs of customers using our expertise. We Deliver Quality Websites with:</p>
+                    <ul>
+                        <li>Simple UI and Professional Designs</li>
+                        <li>Easy and User Friendly Navigation</li>
+                        <li>Fast Page Loading</li>
+                        <li>Fresh Content</li>
+                        <li>Full Responsiveness to different Media</li>
+                        <li>Multiple Browser Compatibility</li>
+                        <li>SEO(Search Engine Optimisation)</li>
+                    </ul>
+                    <div id="desc" class="col-md-12">
+                        <p><b>We believe in Actions Before Words. What We Are will be Weighed Upon What We Do.</b></p>
+                        <p>So we Introduce ourselves to the World with this website, about our Hometown - <a href="#">www.mykoduvayur.in</a></p>
+                        <p>We Believe in our Skills, Passion and Efforts. And we wanted a name that reflects our Belief.</p>
+                        <p>And that is exactly what <b>Team BehindBrains</b> stands for.</p>
+                        <div class=" col-md-12 well"><b>"..The Brains Behind Brilliance.."</b></div>
+                    </div>
+                </div>
+
+                <div class="col-md-12" id="motto">
+                    <h1>OUR VISION<i class="glyphicon glyphicon-eye-open"></i></h1>
+                    <p>Our vision is our motto, which is a simple representation of what we intend to do.</p>
+                    <p><b>Contrive . Fabricate . Deliver</b></p>
+                    <ul>
+                        <li>
+                            <b>Contrive / kənˈtrʌɪv</b>
+                            <p>To create or bring about something by deliberate use of skill, artifice and creativity.</p>
+                        </li>
+                        <li>
+                            <b>Fabricate / ˈfabrɪkeɪt</b>
+                            <p>To construct or manufacture something based on a formulated plan using prepared components.</p>
+                        </li>
+                        <li>
+                            <b>Deliver  / dɪˈlɪvə</b>
+                            <p>To perform, complete or achieve something as promised.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-12" id="adslot2_mob">
+                    <div></div>
+                </div>
+
+                <div class="col-md-12" id="aboutwebsite">
+                    <h1>ABOUT THIS WEBSITE<i class="fa fa-info-circle"></i></h1>
+                    <li>This website is a collection of information regarding anything and everything that is related to Koduvayur.</li>
+                    <li>All the different institutions, Govt. offices, schools, hospitals, historic and religious places, festivals, commerce, events, associations etc. find their place on our website, presented in a clean ordered way.</li>
+                    <li>An extensive collection of information and contact details of every establishment and service in and around Koduvayur will help the public to meet their needs in an easier and faster way.</li>
+                    <li>Regular news updates, alerts and a collection of good articles, photographs and videos that relate to our context are included..</li>
+                </div>
+
+                <div class="col-md-12" id="funds">
+                    <h1>FUNDS<i class="fa fa-inr"></i></h1>
+                    <li>As is the case with any other website, this website needs funding for its <b>functioning and regular activity.</b></li>
+                    <li>This website <b>DOES NOT feature any Online Ads or Cookies</b> as a source of income, as it will spoil the User Experience.</li>
+                    <li>Instead, we provide <b>Prescribed Ad Slots for fixed Time Period</b> for Interested Businesses who wish to promote themselves with this website.</li>
+                    <li>The Ad Slot consists of a <b>fixed area</b> on each page and a <b>Dedicated Page</b> for each Sponsor.</li>
+                    <li>We also accept and appreciate funds from Well Wishers for the functioning of this Website.</li>
+                </div>
+
+                <div class="col-md-12" id="team">
+                    <h1>OUR TEAM<i class="fa fa-hand-paper-o"></i></h1>
+                </div>
+
+                <div class="col-md-12" id="contactus">
+                    <h1>CONTACT US<i class="fa fa-envelope"></i></h1>
+                    <p>For anyone who wishes to contact us: </p>
+                    <li>You can use our <a href="https://www.facebook.com/MyKoduvayur-675861215918423/" ><b>FaceBook Page</b></a>.</li>
+                    <li>Or you can mail us to our e-mail : <b>mykoduvayur@gmail.com</b>.</li>
+                </div>
+
+            </div>
+
+            <div class="col-md-2" id="adslot2_pc">
+                <div></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="col-md-12" id="footer" ng-controller="mainController">
+
+        <p id="copyright">Team BehindBrains © 2017 Project MyKoduvayur.</p>
+
+        <p id="follow">Follow Us On:
+            <a href="https://www.facebook.com/MyKoduvayur-675861215918423/" ><i class="fa fa-facebook-official"></i></a>
+        </p>
+
+        <p id="pcshare">Share:
+            <a id="pcfbshare" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.mykoduvayur.in%2F&amp;src=sdkpreparse"><i class="fa fa-facebook-official"></i></a>
+            <a id="pcplusone" href="https://plus.google.com/share?url=http://www.mykoduvayur.in"><i class="fa fa-google-plus-official"></i></a>
+            <a id="pctweet" href="https://twitter.com/share?url=http://www.mykoduvayur.in"><i  class="fa fa-twitter"></i></a>
+            <a id="pcwhatsapp" href="whatsapp://send?text=http://www.mykoduvayur.in"><i class="fa fa-whatsapp"></i></a>
+        </p>
+
+    </div>
+
+</div>

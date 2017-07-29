@@ -1,0 +1,275 @@
+
+<div class="col-md-12" id="mypage">
+
+    <nav id="mykdr_nav" ng-controller="mainController">
+
+        <div class="col-md-12">
+
+            <div id="mykdr_logo">
+                <img class="mylogo" src="images/mykdrpng.png" href="#" alt="www.mykoduvayur.in" />
+
+                <a class="mylogocap" href="#">MYKODUVAYUR</a>
+                <label ng-click="opened()" id="mymenuglyph"><i class="fa fa-bars"></i></label>
+                <label ng-click="closed()" id="closenav"><i class="glyphicon glyphicon-remove"></i></label>
+            </div>
+
+            <ul id="mykdr_menu">
+                <li id="language">
+                    <a ng-click="langselect()" id="langmenu">&nbsp;<i class="fa fa-language"></i> LANGUAGE &nbsp; </a>
+                    <a ng-click="eng()" id="english">&nbsp;<i class="fa fa-buysellads"></i> ENGLISH&nbsp;</a>
+                    <a ng-click="mal()" id="malayalam">&nbsp;<label>മ</label> മലയാളം&nbsp;</a>
+                </li>
+                <li ng-click="menuload()" id="home"><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
+                <li ng-click="menuload()" id="locality"><a href="#locality"><i class="fa fa-map"></i> LOCALITY</a></li>
+                <li ng-click="menuload()" id="culture"><a href="#culture"><i class="fa fa-bell"></i> CULTURE</a></li>
+                <li ng-click="menuload()" id="services"><a href="#services"><i class="fa fa-rupee"></i> SERVICES</a></li>
+                <li ng-click="menuload()" id="trending"><a href="#trending"><i class="fa fa-hashtag"></i> TRENDING</a></li>
+                <li ng-click="menuload()" id="events"><a href="#events"><i class="fa fa-calendar"></i> EVENTS</a></li>
+                <li ng-click="menuload()" id="feedback"><a href="#feedback"><i class="fa fa-comments"></i> FEEDBACK</a></li>
+                <li ng-click="menuload()" id="about"><a href="#about"><i class="fa fa-universal-access"></i> ABOUT US</a></li>
+                <li id="mobshare">
+                    <a id="mobfbshare" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.mykoduvayur.in%2F&amp;src=sdkpreparse"><i class="fa fa-facebook-official"></i></a>
+                    <a id="mobplusone" href="https://plus.google.com/share?url=http://www.mykoduvayur.in"><i class="fa fa-google-plus-official"></i></a>
+                    <a id="mobtweet" href="https://twitter.com/share?url=http://www.mykoduvayur.in"><i  class="fa fa-twitter"></i></a>
+                    <a id="mobwhatsapp" href="whatsapp://send?text=http://www.mykoduvayur.in"><i class="fa fa-whatsapp"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="alertlang" class="alert alert-success" role="alert">
+            <a href="" class="close" aria-label="close" ng-click="alertClose()">×</a>
+            Selected Language: <strong>{{myLang}}</strong>
+        </div>
+
+    </nav>
+
+    <div class="col-md-12" id="non-nav">
+        <img class="pagebanner" src="./images/covers/services.jpg" />
+
+        <div class="col-md-12" id="content">
+
+            <div class="col-md-2" id="adslot1_pc">
+                <div></div>
+            </div>
+
+            <div class="col-md-8" id="maincontent">
+
+                <div class="col-md-12" id="adslot1_mob">
+                    <div></div>
+                </div>
+
+                <div class="col-md-12" id="intro">
+                    <h1>INTRODUCTION<i class="fa fa-pencil-square-o"></i></h1>
+                    <p>Koduvayur the prime Business Center for the south-west region of Palakkad district. Almost every kind of services that one needs is available in and around this place. Its hard to keep record of every one of them and use them at the time of need. MyKoduvayur brings to you the entire list and details of every kind of services that is available around this place, presented in a clean and ordered way with categories and sub-categories. One can look through it whenever needed, choose one and use it. We believe that this page will be the most useful one in this website. We hope you find it useful.</p>
+                </div>
+
+                <div class="col-md-12 btn-danger" id="emergency"><i class="fa fa-plus-square"></i> EMERGENCY</div>
+
+
+                <div class="col-md-12" id="adslot2_mob">
+                    <div></div>
+                </div>
+
+                <div class="col-md-12">
+                    <h1><i class="fa fa-spinner"></i> CATEGORIES</h1>
+                    <div class=" panel panel-default panelout" id="servicebroad">
+                        <div class="panel-body">
+
+                            <div data-toggle="collapse" data-target="#education" class="col-md-4 servicecol panel panel-default">
+                                <div class="panel-body panelcontent">
+                                    <img src="./images/thumbs/03.jpg" class="panelimg" alt="test"></img>
+                                </div>
+                                <div class="panel-footer panelname">EDUCATION</div>
+                            </div>
+                            <div id="education" class="col-md-12 panel panel-primary panelout servicesub collapse">
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> SCHOOLS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> COLLEGES</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> TUITION CENTRE</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> COMPUTER EDUCATION</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> OTHER COURSES</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> TTC</div>
+                            </div>
+
+                            <div data-toggle="collapse" data-target="#health" class="col-md-4 servicecol panel panel-default">
+                                <div class="panel-body panelcontent">
+                                    <img src="./images/thumbs/02.jpg" class="panelimg" alt="test"></img>
+                                </div>
+                                <div class="panel-footer panelname">HEALTH</div>
+                            </div>
+                            <div id="health" class="col-md-12 panel panel-primary servicesub collapse">
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> HOSPITALS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> CLINICS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> HOMOEO</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> AYURVEDA</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> ENGLISH MEDICINE</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> AYURVEDA MEDICINE</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> AMBULANCE</div>
+                            </div>
+
+                            <div data-toggle="collapse" data-target="#transport" class="col-md-4 servicecol panel panel-default">
+                                <div class="panel-body panelcontent">
+                                    <img src="./images/thumbs/10.jpg" class="panelimg" alt="test"></img>
+                                </div>
+                                <div class="panel-footer panelname">TRANSPORT</div>
+                            </div>
+                            <div id="transport" class="col-md-12 servicesub panel panel-primary collapse">
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> AUTORIKSHAW</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> AUTO-TAXI</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> TAXI</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> TEMPO TRAVELLER</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> AMBULANCE</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> CARRIER AUTO</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> TRAVEL AGENCY</div>
+                            </div>
+
+                            <div data-toggle="collapse" data-target="#household" class="col-md-4 servicecol panel panel-default">
+                                <div class="panel-body panelcontent">
+                                    <img src="./images/thumbs/04.jpg" class="panelimg" alt="test"></img>
+                                </div>
+                                <div class="panel-footer panelname">HOUSEHOLD</div>
+                            </div>
+                            <div id="household" class="col-md-12 servicesub panel panel-primary collapse">
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> ELECTRICIAN</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> CARPENTER</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> PAINTER</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> CONSTRUCTION</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> PLUMBER</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> SERVANTS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> TREE CLIMBER</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> GAS AGENCIES</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> BANKING</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> ATM</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> CUSTOMER CARE</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> BEAUTY PARLOUR</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> SALOON</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> TAILORING</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> LOCK PICKING</div>
+                            </div>
+
+                            <div data-toggle="collapse" data-target="#foodnstay" class="col-md-4 servicecol panel panel-default">
+                                <div class="panel-body panelcontent">
+                                    <img src="./images/thumbs/05.jpg" class="panelimg" alt="test"></img>
+                                </div>
+                                <div class="panel-footer panelname">FOOD & STAY</div>
+                            </div>
+                            <div id="foodnstay" class="col-md-12 servicesub panel panel-primary collapse">
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> BAKERY</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> RESTAURANTS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> TEA STALLS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> THATTUKADA</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> HOTELS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> HOTELS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> LODGE</div>
+                            </div>
+
+                            <div data-toggle="collapse" data-target="#shopping" class="col-md-4 servicecol panel panel-default">
+                                <div class="panel-body panelcontent">
+                                    <img src="./images/thumbs/06.jpg" class="panelimg" alt="test"></img>
+                                </div>
+                                <div class="panel-footer panelname">SHOPPING</div>
+                            </div>
+                            <div id="shopping" class="col-md-12 servicesub panel panel-primary collapse">
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> SUPERMARKET</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> JEWELLERY</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> FURNITURE</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> METAL SHOPS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> TEXTILES</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> MEDICAL SHOPS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> AYURVEDIC SHOPS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> GIFT & FANCY</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> STATIONERY</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> BOOK STALLS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> MILMA STALLS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> HARDWARE SHOPS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> PAINT SHOPS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> FRUIT STALLS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> VEGETABLE MART</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> GROCERIES</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> HOME APPLIANCES</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> ELECTRICALS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> WATCH MARTS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> MOBILE & PARTS</div>
+                            </div>
+
+                            <div data-toggle="collapse" data-target="#govtservices" class="col-md-4 servicecol panel panel-default">
+                                <div class="panel-body panelcontent">
+                                    <img src="./images/thumbs/07.jpg" class="panelimg" alt="test"></img>
+                                </div>
+                                <div class="panel-footer panelname">GOVT. SERVICES</div>
+                            </div>
+                            <div id="govtservices" class="col-md-12 servicesub panel panel-primary collapse">
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> RATION SHOPS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> KSEB</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> PANCHAYAT OFFICE</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> WATER AUTHORITY</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> GOVT. HOSPITAL</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> OLD AGE HOME</div>
+                            </div>
+
+                            <div data-toggle="collapse" data-target="#eventservice" class="col-md-4 servicecol panel panel-default">
+                                <div class="panel-body panelcontent">
+                                    <img src="./images/thumbs/12.jpg" class="panelimg" alt="test"></img>
+                                </div>
+                                <div class="panel-footer panelname">EVENTS</div>
+                            </div>
+                            <div id="eventservice" class="col-md-12 servicesub panel panel-primary collapse">
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> STUDIOS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> CATERING</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> AUDITORIUM</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> CARD SHOPPE</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> GRAPHIC DESIGN</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> FLOWER MART</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> STAGE DECORATION</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> PRIEST</div>
+                            </div>
+
+                            <div data-toggle="collapse" data-target="#servicenrepair" class="col-md-4 servicecol panel panel-default">
+                                <div class="panel-body panelcontent">
+                                    <img src="./images/thumbs/08.jpg" class="panelimg" alt="test"></img>
+                                </div>
+                                <div class="panel-footer panelname">SERVICE & REPAIR</div>
+                            </div>
+                            <div id="servicenrepair" class="col-md-12 servicesub panel panel-primary collapse">
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> TV REPAIR</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> ELECTRONICS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> FRIDGE SERVICE</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> 2 WHEELERS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> 3 WHEELERS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> 4 WHEELERS</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> MOBILE SERVICE</div>
+                                <div class="label-success servicesupersub col-md-4"><i class="fa fa-circle-o-notch"></i> COMPUTER SERVICE</div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-2" id="adslot2_pc">
+                <div></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-12" id="footer" ng-controller="mainController">
+
+        <p id="copyright">Team BehindBrains © 2017 Project MyKoduvayur.</p>
+
+        <p id="follow">Follow Us On:
+            <a href="https://www.facebook.com/MyKoduvayur-675861215918423/" ><i class="fa fa-facebook-official"></i></a>
+        </p>
+
+        <p id="pcshare">Share:
+            <a id="pcfbshare" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.mykoduvayur.in%2F&amp;src=sdkpreparse"><i class="fa fa-facebook-official"></i></a>
+            <a id="pcplusone" href="https://plus.google.com/share?url=http://www.mykoduvayur.in"><i class="fa fa-google-plus-official"></i></a>
+            <a id="pctweet" href="https://twitter.com/share?url=http://www.mykoduvayur.in"><i  class="fa fa-twitter"></i></a>
+            <a id="pcwhatsapp" href="whatsapp://send?text=http://www.mykoduvayur.in"><i class="fa fa-whatsapp"></i></a>
+        </p>
+
+    </div>
+
+</div>

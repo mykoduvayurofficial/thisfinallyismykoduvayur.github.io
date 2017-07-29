@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="mykdrApp">
+
+<script type="text/javascript">
+    function nocontext(e) {
+        var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+        if (clickedTag == "img")
+            return false;
+    }
+    document.oncontextmenu = nocontext;
+    document.onkeypress = function(event) {
+        event = (event || window.event);
+        if (event.keyCode === 123) {
+            return false;}};
+    document.onmousedown = function(event) {
+        event = (event || window.event);
+        if (event.keyCode === 123) {
+            return false;}};
+    document.onkeydown = function(event) {
+        event = (event || window.event);
+        if (event.keyCode === 123) {
+            return false;}};
+    function cp() {return false;}
+    function mousehandler(e) {
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if ((eventbutton == 2) || (eventbutton == 3))
+            return false;}
+    document.oncontextmenu = cp;
+    document.onmouseup = cp;
+    var isCtrl = false;
+    window.onkeyup = function(e)
+    {if (e.which == 17)
+        isCtrl = false;}
+    window.onkeydown = function(e)
+    {if (e.which == 17)
+        isCtrl = true;
+        if (((e.which == 85) || (e.which == 65) || (e.which == 88) || (e.which == 67) || (e.which == 86) || (e.which == 83)) && isCtrl == true){
+            return false;}}
+    document.ondragstart = cp;
+</script>
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <meta name="Everything to know about Koduvayur" content="">
+    <meta name="kriz" content="">
+    <meta name="description" content="Everything about Koduvayur, Palakkad. Keralapuram Agraharam, Althara, Ethanur, Kakkayur, Angadi, Pittupeedika, Kottamala,  Village, Radholsavam, Theru, Car Festival, Ganeshotsavam, Sooranporu, Kanyarkali, Dhanupath, GHSS, High School, Marian College, Gramam, Althara, Market, Chariots, Uriyadi, Navarathri, Market, Traffic, Nochur....">
+    <meta name="keywords" content="koduvayur, althara, radholsavam, gramam, ethanur, kakkayur, mochur, mannathukavu, mykoduvayur, pittupeedika, angadi, market">
+
+    <title>MyKoduvayur</title>
+
+    <link rel="icon" href="images/mykdrico.ico">
+
+    <!--BOOTSTRAP CSS-->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/kriz.css" />
+    <link rel="stylesheet" href="css/amkriz.css" />
+    <link rel="stylesheet" href="css/content.css" />
+
+    <!--ANGULAR and APP-->
+
+
+
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/angular-easyfb.min.js"></script>
+    <script src="koduvayur.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/npm.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjyFs7nzkwdQ9YhT1AeALSYEeGEBbFpuQ&callback=myMap"></script>
+
+    <!--CUSTOM STYLESCRIPTS-->
+
+
+
+    <!--HTML5 shim AND Respond.js for IE8 support of HTML5 Elements and Media Queries-->
+
+
+    <!--[if lt IE 9]-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <!--[end if]-->
+    
+    
+</head>
+
+<body>
+
+
+<div id="main">
+    <div ng-view></div>
+</div>
+
+<!-- Scripts -->
+
+
+<!--BOOTSTRAP CORE JAVASCRIPT-->
+<!--[**PLACED AT THE END OF THE PAGE SO THAT PAGES LOAD FASTER]-->
+
+<!--CONTROLLERS AND SERVICES-->
+
+</body>
+
+</html>

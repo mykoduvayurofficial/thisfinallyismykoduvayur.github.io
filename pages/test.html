@@ -1,0 +1,117 @@
+<div class="col-md-12" id="mypage">
+
+    <nav id="mykdr_nav" ng-controller="mainController">
+
+        <div class="col-md-12">
+
+            <div id="mykdr_logo">
+                <img class="mylogo" src="images/mykdrpng.png" href="#" alt="www.mykoduvayur.in" />
+
+                <a class="mylogocap" href="#">MYKODUVAYUR</a>
+                <label ng-click="opened()" id="mymenuglyph"><i class="fa fa-bars"></i></label>
+                <label ng-click="closed()" id="closenav"><i class="glyphicon glyphicon-remove"></i></label>
+            </div>
+
+            <ul id="mykdr_menu">
+                <li id="language">
+                    <a ng-click="langselect()" id="langmenu">&nbsp;<i class="fa fa-language"></i> LANGUAGE &nbsp; </a>
+                    <a ng-click="eng()" id="english">&nbsp;<i class="fa fa-buysellads"></i> ENGLISH&nbsp;</a>
+                    <a ng-click="mal()" id="malayalam">&nbsp;<label>മ</label> മലയാളം&nbsp;</a>
+                </li>
+                <li ng-click="menuload()" id="home"><a href="#home"><i class="fa fa-home"></i> HOME</a></li>
+                <li ng-click="menuload()" id="locality"><a href="#locality"><i class="fa fa-map"></i> LOCALITY</a></li>
+                <li ng-click="menuload()" id="culture"><a href="#culture"><i class="fa fa-bell"></i> CULTURE</a></li>
+                <li ng-click="menuload()" id="services"><a href="#services"><i class="fa fa-rupee"></i> SERVICES</a></li>
+                <li ng-click="menuload()" id="trending"><a href="#trending"><i class="fa fa-hashtag"></i> TRENDING</a></li>
+                <li ng-click="menuload()" id="events"><a href="#events"><i class="fa fa-calendar"></i> EVENTS</a></li>
+                <li ng-click="menuload()" id="feedback"><a href="#feedback"><i class="fa fa-comments"></i> FEEDBACK</a></li>
+                <li ng-click="menuload()" id="about"><a href="#about"><i class="fa fa-universal-access"></i> ABOUT US</a></li>
+                <li id="mobshare">
+                    <a id="mobfbshare" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.mykoduvayur.in%2F&amp;src=sdkpreparse"><i class="fa fa-facebook-official"></i></a>
+                    <a id="mobplusone" href="https://plus.google.com/share?url=http://www.mykoduvayur.in"><i class="fa fa-google-plus-official"></i></a>
+                    <a id="mobtweet" href="https://twitter.com/share?url=http://www.mykoduvayur.in"><i  class="fa fa-twitter"></i></a>
+                    <a id="mobwhatsapp" href="whatsapp://send?text=http://www.mykoduvayur.in"><i class="fa fa-whatsapp"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="alertlang" class="alert alert-success" role="alert">
+            <a href="" class="close" aria-label="close" ng-click="alertClose()">×</a>
+            Selected Language: <strong>{{myLang}}</strong>
+        </div>
+
+    </nav>
+
+    <div class="col-md-12" id="non-nav">
+
+
+        <div id="myCarouselPortrait" class="mob carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarouselPortrait" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarouselPortrait" data-slide-to="1"></li>
+                <li data-target="#myCarouselPortrait" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./images/theme/wallmob.jpg" alt="0">
+                </div>
+
+                <div class="item">
+                    <img src="./images/theme/mymob.jpg" alt="1">
+                </div>
+
+                <div class="item">
+                    <img src="./images/theme/bannermob.jpg" alt="2">
+                </div>
+            </div>
+
+        </div>
+
+        <div id="myCarouselLandscape" class="pc carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarouselLandscape" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarouselLandscape" data-slide-to="1"></li>
+                <li data-target="#myCarouselLandscape" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./images/theme/wallpc.jpg" alt="0">
+                </div>
+
+                <div class="item">
+                    <img src="./images/theme/mypc.jpg" alt="1">
+                </div>
+
+                <div class="item">
+                    <img src="./images/theme/bannerpc.jpg" alt="2">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-12" id="footer" ng-controller="mainController">
+
+        <p id="copyright">Team BehindBrains © 2017 Project MyKoduvayur.</p>
+
+        <p id="follow">Follow Us On:
+            <a href="https://www.facebook.com/MyKoduvayur-675861215918423/" ><i class="fa fa-facebook-official"></i></a>
+        </p>
+
+        <p id="pcshare">Share:
+            <a id="pcfbshare" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.mykoduvayur.in%2F&amp;src=sdkpreparse"><i class="fa fa-facebook-official"></i></a>
+            <a id="pcplusone" href="https://plus.google.com/share?url=http://www.mykoduvayur.in"><i class="fa fa-google-plus-official"></i></a>
+            <a id="pctweet" href="https://twitter.com/share?url=http://www.mykoduvayur.in"><i  class="fa fa-twitter"></i></a>
+            <a id="pcwhatsapp" href="whatsapp://send?text=http://www.mykoduvayur.in"><i class="fa fa-whatsapp"></i></a>
+        </p>
+
+    </div>
+
+</div>
